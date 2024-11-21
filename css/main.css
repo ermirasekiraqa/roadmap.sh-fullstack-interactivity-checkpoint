@@ -1,0 +1,17 @@
+@import "./variables.css";
+
+body {
+  color: var(--ebony-clay);
+  padding: var(--body-padding);
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--ebony-clay);
+}
+
+.title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

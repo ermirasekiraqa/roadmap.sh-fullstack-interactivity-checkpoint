@@ -1,0 +1,68 @@
+@import "./variables.css";
+
+body {
+  background-image: linear-gradient(
+    to right,
+    var(--ebony-clay),
+    var(--mountain-mist)
+  );
+  color: var(--ebony-clay);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: var(--dawn-pink);
+  border-radius: var(--border-radius);
+  padding: var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  /* min-width: 300px; */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-field {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid var(--ebony-clay);
+  background-color: transparent;
+}
+
+.login-btn {
+  border: none;
+  background-color: var(--tealish-blue);
+  color: var(--dawn-pink);
+  border-radius: 32px;
+  font-weight: bold;
+  font-size: large;
+  height: 40px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: var(--pinkish-gray);
+  color: var(--ebony-clay);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 481px) {
+  .login-container {
+    min-width: 300px;
+  }
+}
